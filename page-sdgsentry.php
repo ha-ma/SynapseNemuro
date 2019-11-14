@@ -1,5 +1,5 @@
 <?php
-/* Template Name: contact */
+/* Template Name: SDGs Card Game Entry */
 ?>
 
 <?php get_header(); ?>
