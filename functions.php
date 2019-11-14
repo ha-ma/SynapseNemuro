@@ -9,12 +9,7 @@ add_theme_support( 'html5', array( 'search-form' ) );
 
 // CSSファイルの読み込み
 function theme_styles() {
-  wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
-  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
-  wp_enqueue_style( 'slick-theme_css', get_template_directory_uri() . '/css/slick-theme.css' );
-  wp_enqueue_style( 'slick_css', get_template_directory_uri() . '/css/slick.css' );
-  wp_enqueue_style( 'modaal_css', get_template_directory_uri() . '/css/modaal.css' );
-  wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/style.css' );
+  wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 

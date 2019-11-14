@@ -7853,25 +7853,6 @@ body {
     background: #75BBD1;
     color: #ffffff;
     border-color: #75BBD1; }
-.btnblk .btn__solidWhiteSDGs {
-  position: relative;
-  color: #08102F;
-  background: #ffffff;
-  border: 2px solid #08102F; }
-  .btnblk .btn__solidWhiteSDGs:hover {
-    background: #75BBD1;
-    color: #ffffff;
-    border-color: #75BBD1; }
-  .btnblk .btn__solidWhiteSDGs::before {
-    position: absolute;
-    content: '';
-    width: 26px;
-    height: 26px;
-    top: 15px;
-    left: 35px;
-    background-image: url(../images/logo_circle.png);
-    background-size: cover;
-    background-position: center; }
 .btnblk .btn__solidSecondary {
   position: relative;
   color: #ffffff;
@@ -8005,5 +7986,122 @@ body {
     position: relative;
     top: calc(50% - 11px);
     width: 100%; }
+
+.front__members {
+  background-color: #221815;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .front__members .contentPdg {
+      padding: 125px 38px 80px 38px; } }
+  .front__members--container {
+    position: relative; }
+  .front__members .common__title, .front__members .common__txt {
+    color: #ffffff; }
+  .front__members .common__txt {
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .front__members .common__txt {
+        font-size: 21px;
+        line-height: calc(40 / 21);
+        max-width: 723px;
+        margin: 0 auto 115px auto; } }
+  .front__members:before, .front__members:after {
+    content: "";
+    display: block;
+    position: absolute; }
+  .front__members:before {
+    max-width: 478px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/events_logo_circle.png) no-repeat right center;
+    background-size: auto 15%;
+    top: 30%;
+    left: -10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    z-index: 9; }
+    @media (min-width: 321px) {
+      .front__members:before {
+        width: 62%;
+        top: 30%; } }
+    @media (min-width: 768px) {
+      .front__members:before {
+        width: 62%;
+        top: 21%;
+        left: -10%;
+        background-size: auto 30%; } }
+  .front__members:after {
+    max-width: 478px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/events_logo_circle.png) no-repeat left center;
+    background-size: auto 15%;
+    top: 77%;
+    right: -10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    z-index: 9; }
+    @media (min-width: 321px) {
+      .front__members:after {
+        width: 62%; } }
+    @media (min-width: 768px) {
+      .front__members:after {
+        width: 62%;
+        right: -10%;
+        background-size: auto 30%; } }
+  .front__members__list {
+    font-size: 0;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .front__members__list {
+        max-width: 1611px;
+        margin: 0 auto;
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; */ } }
+  .front__members__item {
+    color: #ffffff;
+    width: 100%;
+    margin: 0 0 70px 0;
+    display: inline-block;
+    vertical-align: top; }
+    @media (min-width: 768px) {
+      .front__members__item {
+        margin: 0 8.4% 130px 0; } }
+    @media (min-width: 768px) {
+      .front__members__item {
+        width: 18.6%;
+        margin: 0 8.3% 130px 0; } }
+    .front__members__item:nth-child(4) {
+      margin-right: 0; }
+    .front__members__item:last-child {
+      margin: 0; }
+    .front__members__item dl {
+      margin-bottom: 20px; }
+      .front__members__item dl dt, .front__members__item dl dd {
+        text-align: center; }
+      .front__members__item dl dt {
+        font-size: 21px;
+        line-height: calc(24 / 21);
+        margin-bottom: 7px; }
+      .front__members__item dl dd {
+        font-size: 14px;
+        line-height: calc(24 / 14); }
+    .front__members__item p {
+      font-size: 14px;
+      line-height: calc(24 / 14); }
+  .front__members__img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 26px auto;
+    border-radius: 50%;
+    background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

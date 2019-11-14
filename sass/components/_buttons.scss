@@ -51,32 +51,6 @@
     }
   }
 
-
-  // 白塗りSDGsアイコン付きボタン
-  .btn__solidWhiteSDGs {
-    position: relative;
-    color: $text-navy;
-    background: $white;
-    border: 2px solid $text-navy;
-    &:hover {
-      background: $secondary;
-      color: $white;
-      border-color: $secondary;
-    }
-
-    &::before {
-      position: absolute;
-      content: '';
-      width: 26px;
-      height: 26px;
-      top: 15px;
-      left: 35px;
-      background-image: url(../images/logo_circle.png);
-      background-size: cover;
-      background-position: center;
-    }
-  }
-
   // 水色塗りボタン
   .btn__solidSecondary {
     position: relative;
