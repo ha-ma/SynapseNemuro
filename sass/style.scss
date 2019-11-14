@@ -1,0 +1,24 @@
+@import 'meta/_meta';
+
+@import 'base/_normalize';
+@import 'base/_bootstrap';
+@import 'base/_mixin';
+@import 'base/_base-setting';
+@import 'base/_colors';
+@import 'base/_fonts';
+
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_buttons';
+@import 'components/_headings';
+@import 'components/_members';
+@import 'components/_tables';
+@import 'components/_forms';
+
+@import 'pages/front/_front-MV';
+@import 'pages/front/_front-SDGs-Card-Game';
+@import 'pages/front/_front-SDGs-entry';
+@import 'pages/front/_front-about';
+@import 'pages/front/_front-activity';
+
+@import 'pages/_page-sdgsentry';

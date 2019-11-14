@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+body {
+  color: $text-black;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.body * {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.body h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.body h2 span {
+  font-size: 16px;
+  position: relative;
+  top: -8px;
+  left: 8px;
+  letter-spacing: normal;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.underlined {
+  &-wrapper {
+    text-align: center;
+  }
+  display: inline;
+  background:linear-gradient(transparent 50%, #90DEF7 0%);
+  color: #333333;
+}

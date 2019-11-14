@@ -1,0 +1,115 @@
+.tables {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 11px 15px 33px;
+  border: 2px dashed $text-blue;
+  border-top: 13px solid $text-blue;
+  box-shadow: 0 3px 6px rgba(#000000, .16);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media(min-width: 768px) {
+    margin-bottom: 100px;
+    padding: 34px 25px 55px;
+    border-top: 20px solid $text-blue;
+  }
+  &__heading {
+    margin-bottom:21px;
+    font-size: 24px;
+    text-align: center;
+    color: $text-blue;
+    font-weight: 700;
+    @media(min-width: 768px) {
+      margin-bottom: 26px;
+    }
+  }
+  &__sub {
+    padding: 18px 0 21px;
+    margin-bottom: 22px;
+    border-top: 3px dashed $border-orange;
+    border-bottom: 3px dashed $border-orange;
+    text-align: center;
+    color: $text-blue;
+    font-size: 18px;
+    font-weight: 700;
+    @media(min-width: 768px) {
+      padding: 23px 0;
+      margin-bottom: 73px;
+      font-size: 21px;
+      line-height: calc(30/21);
+    }
+  }
+  &__inner {
+    @media(min-width: 768px) {
+      box-shadow: 0 3px 6px rgba(#000000, .16);
+    }
+  }
+  &__infos {
+    margin-bottom: 23px;
+    box-shadow: 0 3px 6px rgba(#000000, .16);
+    @media(min-width: 768px) {
+      display: flex;
+      box-shadow: none;
+      margin-bottom: 0;
+      border-bottom: 1px solid #DBDBDB;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__title {
+      display: block;
+      padding: 8px 9px 14px;
+      text-align: center;
+      background-color: $bg-lightgray;
+      font-size: 15px;
+      font-weight: 700;
+      position: relative;
+      @media(min-width: 768px) {
+        padding: 23px 0;
+        width: 30%;
+        max-width: 264px;
+        text-align: center;
+        p {
+          position: relative;
+          top: calc(50% - 11px);
+          width: 100%;
+        }
+      }
+      .pc {
+        display: none;
+        @media(min-width: 768px) {
+          display: block;
+        }
+      }
+    }
+    &__desc {
+      display: block;
+      padding: 10px 9px 15px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      @media(min-width: 768px) {
+        padding: 23px 65px;
+        width: 70%;
+        text-align: left;
+      }
+    }
+  }
+
+  &.producer {
+    .tables__infos {
+      >.tables__infos__title {
+        p {
+          position: static;
+        }
+      }
+      >.tables__infos__desc {
+        p {
+          position: relative;
+          top: calc(50% - 11px);
+          width: 100%;
+        }
+      }
+    } 
+  }
+}

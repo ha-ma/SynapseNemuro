@@ -1,0 +1,14 @@
+@mixin gradPrimary() {
+  background: #195397; /* Old browsers */
+  background: -moz-linear-gradient(top,  #195397 0%, #75bbd1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #195397 0%,#75bbd1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #195397 0%,#75bbd1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195397', endColorstr='#75bbd1',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin transitionEase( $sec: 0.25s ) {
+  -webkit-transition: all $sec ease;
+  -moz-transition: all $sec ease;
+  -o-transition: all $sec ease;
+  transition: all $sec ease;
+}
