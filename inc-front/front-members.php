@@ -1,7 +1,6 @@
 <section class="front__members">
-  <div class="front__members--container contentPdg">
-    <h2 class="common__title">アドバイザリーボード</h2>
-    <p class="common__txt">SDGs Quest みらい甲子園の総合アドバイザーであり、ブロック大会への選考基準を決めるメンバーです。<br>各地域で開催されるブロック大会の審査員も務めます。</p>
+  <div class="front__members--container">
+    <h2 class="front__members__heading">MEMBERS</h2>
 
     <ul class="front__members__list">
       <li class="front__members__item">
