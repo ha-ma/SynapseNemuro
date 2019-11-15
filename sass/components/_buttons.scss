@@ -49,6 +49,20 @@
   }
 }
 
+// navy塗りボタン
+.btn--solidNavy {
+  position: relative;
+  color: $white;
+  background: $accent;
+  border: 2px solid $accent;
+  border-color: $accent;
+  &:hover {
+    background: transparent;
+    color: $accent;
+  }
+}
+
+
 // 白塗りボタン
 .btn--solidWhite {
   color: $text-navy;

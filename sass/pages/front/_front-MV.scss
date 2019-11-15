@@ -76,8 +76,10 @@
       width: 170px;
       height: 2px;
       background: $white;
+      display: none;
       @media (min-width: 1280px) {
         left: 215px;
+        display: block;
       }
     }
 

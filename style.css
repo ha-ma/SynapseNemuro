@@ -7860,6 +7860,16 @@ body {
     color: #00A9B7;
     border-color: #00A9B7; }
 
+.btn--solidNavy {
+  position: relative;
+  color: #ffffff;
+  background: #0A1C52;
+  border: 2px solid #0A1C52;
+  border-color: #0A1C52; }
+  .btn--solidNavy:hover {
+    background: transparent;
+    color: #0A1C52; }
+
 .btn--solidWhite {
   color: #08102F;
   background: #ffffff;
@@ -8061,10 +8071,12 @@ body {
       content: '';
       width: 170px;
       height: 2px;
-      background: #ffffff; }
+      background: #ffffff;
+      display: none; }
       @media (min-width: 1280px) {
         .front__MV__subHeading::before {
-          left: 215px; } }
+          left: 215px;
+          display: block; } }
   .front__MV__btns {
     margin-top: 180px; }
     @media (min-width: 1280px) {
@@ -8128,6 +8140,239 @@ body {
         left: -100px;
         background: center/cover no-repeat url(images/doto.png);
         z-index: 1; } }
+
+.front__SDGsCardGame {
+  position: relative;
+  padding-top: 160px;
+  background: #F2FAFF;
+  z-index: 0;
+  overflow: hidden; }
+  .front__SDGsCardGame__earth {
+    position: absolute;
+    top: 320px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 300px;
+    opacity: 0.4;
+    z-index: 1; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__earth {
+        top: auto;
+        right: auto;
+        left: -300px;
+        bottom: -260px;
+        width: 1000px;
+        opacity: 0.7; } }
+  .front__SDGsCardGame__bggrad {
+    position: absolute;
+    top: 30%;
+    right: -150%;
+    width: 900px;
+    opacity: 0.6; }
+    @media (min-width: 600px) {
+      .front__SDGsCardGame__bggrad {
+        right: -80%; } }
+    @media (min-width: 768px) {
+      .front__SDGsCardGame__bggrad {
+        right: -60%; } }
+    @media (min-width: 1024px) {
+      .front__SDGsCardGame__bggrad {
+        right: -20%; } }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__bggrad {
+        right: -30%; } }
+    @media (min-width: 1440px) {
+      .front__SDGsCardGame__bggrad {
+        top: 10%;
+        right: -10%; } }
+  .front__SDGsCardGame__bird--0 {
+    position: absolute;
+    z-index: 1;
+    top: 590px;
+    left: -20px;
+    width: 100px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__bird--0 {
+        top: 30%;
+        left: 2%; } }
+  .front__SDGsCardGame__bird--1 {
+    position: absolute;
+    z-index: 1;
+    top: 750px;
+    right: -30px;
+    width: 200px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__bird--1 {
+        top: 10%;
+        right: 5%; } }
+  .front__SDGsCardGame__bird--2 {
+    position: absolute;
+    z-index: 1;
+    top: 1110px;
+    left: -10px;
+    width: 120px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__bird--2 {
+        top: 45%;
+        left: 50%; } }
+  .front__SDGsCardGame__bird--3 {
+    position: absolute;
+    z-index: 1;
+    top: 1050px;
+    right: -10px;
+    width: 120px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__bird--3 {
+        top: 40%;
+        right: 5%; } }
+  .front__SDGsCardGame__bird--4 {
+    position: absolute;
+    z-index: 1;
+    top: 1350px;
+    left: -10px;
+    width: 100px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__bird--4 {
+        top: 90%;
+        left: 45%; } }
+  .front__SDGsCardGame--container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 2; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame--container {
+        text-align-last: left;
+        width: 80%; } }
+  .front__SDGsCardGame__heading {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: calc( 48 / 32 );
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__heading {
+        font-size: 60px; } }
+    .front__SDGsCardGame__heading::before {
+      position: absolute;
+      top: -120px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 120px;
+      height: 122.25px;
+      content: '';
+      background: center/cover no-repeat url(images/sdgscardfree-sp.png); }
+      @media (min-width: 1280px) {
+        .front__SDGsCardGame__heading::before {
+          top: -100px;
+          right: auto;
+          left: -130px;
+          background: center/cover no-repeat url(images/sdgscardfree-pc.png); } }
+  @media (min-width: 1280px) {
+    .front__SDGsCardGame__contents {
+      width: 60%; } }
+  .front__SDGsCardGame__content--illustration {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    z-index: 5; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__content--illustration {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        max-width: 460px; } }
+    .front__SDGsCardGame__content--illustration--sdgscardgame {
+      width: 100%; }
+  .front__SDGsCardGame__eventInfo {
+    width: 80%;
+    margin: 0 auto 90px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__eventInfo {
+        margin-left: 0;
+        margin-bottom: 50px; } }
+    .front__SDGsCardGame__eventInfo__datetime, .front__SDGsCardGame__eventInfo__placesubject {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: calc( 36 / 18 );
+      color: #000000; }
+      @media (min-width: 1280px) {
+        .front__SDGsCardGame__eventInfo__datetime, .front__SDGsCardGame__eventInfo__placesubject {
+          font-size: 24px; } }
+    .front__SDGsCardGame__eventInfo__entryBtn {
+      margin-top: 30px; }
+  .front__SDGsCardGame__aboutSDGs {
+    text-align: center;
+    margin-bottom: 90px; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__aboutSDGs {
+        margin-bottom: 50px; } }
+    .front__SDGsCardGame__aboutSDGs__heading {
+      position: relative;
+      display: inline-block;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+      line-height: calc( 37 / 24 );
+      color: #ffffff;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+      z-index: 4; }
+      .front__SDGsCardGame__aboutSDGs__heading::before {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        left: 0;
+        background-color: #0A1C52;
+        content: '';
+        height: 23px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: -1; }
+    .front__SDGsCardGame__aboutSDGs__desc {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 700; }
+  .front__SDGsCardGame__experience {
+    text-align: center; }
+    @media (min-width: 1280px) {
+      .front__SDGsCardGame__experience {
+        margin-bottom: 90px; } }
+    .front__SDGsCardGame__experience__heading {
+      position: relative;
+      display: inline-block;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+      line-height: calc( 37 / 24 );
+      color: #ffffff;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+      z-index: 4; }
+      .front__SDGsCardGame__experience__heading::before {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        left: 0;
+        background-color: #0A1C52;
+        content: '';
+        height: 23px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: -1; }
+    .front__SDGsCardGame__experience__desc {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 50px; }
+  @media (min-width: 1280px) {
+    .front__SDGsCardGame__entryBtn {
+      display: block !important; } }
 
 .front__members {
   background-color: #1D1D1D;

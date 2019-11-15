@@ -12,3 +12,29 @@
   -o-transition: all $sec ease;
   transition: all $sec ease;
 }
+
+@mixin flex( $justify: space-between, $align-items: center ) {
+  -js-display: flex; /*--- IE8, 9---*/
+  display: -webkit-box;/*--- Androidブラウザ用 ---*/
+  display: -ms-flexbox;/*--- IE10 ---*/
+  display: -webkit-flex;/*--- safari（PC）用 ---*/
+  display: flex;
+  -webkit-box-align: $align-items;/*--- Androidブラウザ用 ---*/
+  -ms-flex-align: $align-items;/*--- IE10 ---*/
+  -webkit-align-items: $align-items;/*--- safari（PC）用 ---*/
+  align-items: $align-items;
+
+  -webkit-flex-wrap: wrap;/*--- safari（PC）用 ---*/
+  flex-wrap: wrap;
+
+  -webkit-box-pack: $justify;/*--- Androidブラウザ用 ---*/
+  -ms-flex-pack: $justify;/*--- IE10 ---*/
+  -webkit-justify-content: $justify;/*--- safari（PC）用 ---*/
+  justify-content: $justify;
+}
+
+
+@mixin order( $order: 0 ) {
+  -webkit-order: $order;
+  order: $order;
+}

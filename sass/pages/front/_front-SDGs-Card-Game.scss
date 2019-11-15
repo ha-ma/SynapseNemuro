@@ -1,0 +1,293 @@
+.front__SDGsCardGame {
+  position: relative;
+  padding-top: 160px;
+  background: $bg-lightblue;
+  z-index: 0;
+  overflow: hidden;
+
+  // 装飾用画像
+  &__earth {
+    position: absolute;
+    top: 320px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 300px;
+    opacity: 0.4;
+    z-index: 1;
+    @media (min-width: 1280px) {
+      top: auto;
+      right: auto;
+      left: -300px;
+      bottom: -260px;
+      width: 1000px;
+      opacity: 0.7;
+    }
+  }
+
+  &__bggrad {
+    position: absolute;
+    top: 30%;
+    right: -150%;
+    width: 900px;
+    opacity: 0.6;
+    @media (min-width: 600px) {
+      right: -80%;
+    }
+    @media (min-width: 768px) {
+      right: -60%;
+    }
+    @media (min-width: 1024px) {
+      right: -20%;
+    }
+    @media (min-width: 1280px) {
+      right: -30%;
+    }
+    @media (min-width: 1440px) {
+      top: 10%;
+      right: -10%;
+    }
+  }
+
+  &__bird {
+    &--0 {
+      position: absolute;
+      z-index: 1;
+      top: 590px;
+      left: -20px;
+      width: 100px;
+      @media (min-width: 1280px) {
+        top: 30%;
+        left: 2%;
+      }
+    }
+    &--1 {
+      position: absolute;
+      z-index: 1;
+      top: 750px;
+      right: -30px;
+      width: 200px;
+      @media (min-width: 1280px) {
+        top: 10%;
+        right: 5%;
+      }
+    }
+    &--2 {
+      position: absolute;
+      z-index: 1;
+      top: 1110px;
+      left: -10px;
+      width: 120px;
+      @media (min-width: 1280px) {
+        top: 45%;
+        left: 50%;
+      }
+    }
+    &--3 {
+      position: absolute;
+      z-index: 1;
+      top: 1050px;
+      right: -10px;
+      width: 120px;
+      @media (min-width: 1280px) {
+        top: 40%;
+        right: 5%;
+      }
+    }
+    &--4 {
+      position: absolute;
+      z-index: 1;
+      top: 1350px;
+      left: -10px;
+      width: 100px;
+      @media (min-width: 1280px) {
+        top: 90%;
+        left: 45%;
+      }
+    }
+  }
+
+  &--container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 2;
+    @media (min-width: 1280px) {
+      text-align-last: left;
+      width: 80%;
+    }
+  }
+
+  &__heading {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: calc( 48 / 32 );
+    text-align: center;
+    color: $black;
+    margin-bottom: 30px;
+    @media (min-width: 1280px) {
+      font-size: 60px;
+    }
+    &::before {
+      position: absolute;
+      top: -120px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 120px;
+      height: 122.25px;
+      content: '';
+      background: center / cover no-repeat url(images/sdgscardfree-sp.png);
+      @media (min-width: 1280px) {
+        top: -100px;
+        right: auto;
+        left: -130px;
+        background: center / cover no-repeat url(images/sdgscardfree-pc.png);
+      }
+    }
+  }
+
+  &__contents {
+    @media (min-width: 1280px) {
+      width: 60%;
+    }
+  }
+
+  &__content {
+    &--body {
+
+    }
+
+    &--illustration {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      z-index: 5;
+      @media (min-width: 1280px) {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        max-width: 460px;
+      }
+      &--sdgscardgame {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+  &__eventInfo {
+    width: 80%;
+    margin: 0 auto 90px;
+    @media (min-width: 1280px) {
+      margin-left: 0;
+      margin-bottom: 50px;
+    }
+
+    &__datetime,
+    &__placesubject {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: calc( 36 / 18 );
+      color: $black;
+      @media (min-width: 1280px) {
+        font-size: 24px;
+      }
+    }
+
+    &__placesubject {
+
+    }
+
+    &__entryBtn {
+      margin-top: 30px;
+    }
+  }
+
+  &__aboutSDGs {
+    text-align: center;
+    margin-bottom: 90px;
+    @media (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
+
+    &__heading {
+      position: relative;
+      display: inline-block;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+      line-height: calc( 37 / 24 );
+      color: $white;
+      text-shadow: 0 0 6px rgba($black, 0.6);
+      margin-bottom: 20px;
+      z-index: 4;
+      &::before {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        left: 0;
+        background-color: $accent;
+        content: '';
+        height: 23px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: -1;
+      }
+    }
+    &__desc {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  &__experience {
+    text-align: center;
+    @media (min-width: 1280px) {
+      margin-bottom: 90px;
+    }
+
+    &__heading {
+      position: relative;
+      display: inline-block;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+      line-height: calc( 37 / 24 );
+      color: $white;
+      text-shadow: 0 0 6px rgba($black, 0.6);
+      margin-bottom: 20px;
+      z-index: 4;
+      &::before {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        left: 0;
+        background-color: $accent;
+        content: '';
+        height: 23px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: -1;
+      }
+    }
+
+    &__desc {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__entryBtn {
+    @media (min-width: 1280px) {
+      display: block !important;
+      
+    }
+  }
+}
