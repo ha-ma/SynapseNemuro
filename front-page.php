@@ -4,7 +4,7 @@
 		<?php get_template_part( 'inc-front/front', 'MV' ); ?>
 		<?php get_template_part( 'inc-front/front', 'SDGs-card-game' ); ?>
 		<?php get_template_part( 'inc-front/front', 'SDGs-entry' ); ?>
-		<?php get_template_part( 'inc-front/front', 'about' ); ?>
+		<?php // get_template_part( 'inc-front/front', 'about' ); ?>
 		<?php // get_template_part( 'inc-front/front', 'activity' ); ?>
 		<?php // get_template_part( 'inc-front/front', 'members' ); ?>
 	</div> <!-- /.front__main--container -->
