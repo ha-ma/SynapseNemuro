@@ -17,11 +17,7 @@
 	?>
 	<?php wp_nav_menu( $args ); ?>
 
-	<div class="footer__entryLink">
-		<a href="<?php bloginfo( 'url' ); ?>/entry" class="footer__entryLink__link">◆ エントリーはこちらから</a>
-	</div> <!-- /.footer__entryLink -->
-
-	<p class="footer__copyright"><?php echo date( 'Y' ); ?> Copyright &copy; SDGs Quest Mirai Koshien.</p>
+	<p class="footer__copyright"><?php echo date( 'Y' ); ?> Copyright &copy; Synapse Nemuro.</p>
 	</div> <!-- /.footer__container -->
 
 </footer>

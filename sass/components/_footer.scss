@@ -1,16 +1,22 @@
 .footer {
-  background: $text-blue;
+  background: $primary;
 
   &__container {
     width: 95%;
     margin: 0 auto;
     padding-top: 75px;
     padding-bottom: 30px;
+    @media (min-width: 768px) {
+      padding-top: 127px;
+    }
   }
 
   &__logo {
     width: 180px;
     margin: 0 auto 75px;
+    @media (min-width: 768px) {
+      margin-bottom: 90px;
+    }
     &__link {
       display: block;
       width: 100%;
@@ -26,11 +32,17 @@
 
   &__menu {
     width: 90%;
+    max-width: 800px;
     margin: 0 auto 50px;
 
-    &__item {
-      width: 45%;
+    li {
       margin-bottom: 15px;
+      width: 100%;
+      text-align: center;
+      @media (min-width: 768px) {
+        width: 45%;
+        width: auto;
+      }
     }
     &__link {
       position: relative;
@@ -38,13 +50,7 @@
       width: 100%;
       color: $white;
       padding-left: 5px;
-      &::before {
-        position: absolute;
-        top: 4px;
-        left: -5px;
-        content: '-';
 
-      }
     }
   }
 
@@ -54,6 +60,9 @@
     font-weight: 700;
     color: $white;
     margin-bottom: 75px;
+    @media (min-width: 768px) {
+      margin-bottom: 57px;
+    }
     &__link {
       text-decoration: underline;
       &:hover {

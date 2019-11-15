@@ -25,7 +25,7 @@ function theme_js() {
   $wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
   $wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
 
-  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), '', true );
+  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '', true );
   wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery'), '', true );
   wp_enqueue_script( 'header_js', get_template_directory_uri() . '/js/header.js', array('jquery'), '', true );
 }

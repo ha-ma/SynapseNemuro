@@ -1,34 +1,3 @@
-.drawerBtn {
-  position: fixed;
-  top: 30px;
-  right: 24px;
-  display: block;
-  width: 24px;
-  height: 2px;
-  z-index: 9999999;
-
-  &__bar {
-    content: '';
-    background-color: $white;
-    width: 24px;
-    height: 2px;
-    display: block;
-    &::before, &::after {
-      position: absolute;
-      width: 24px;
-      height: 2px;
-      content: '';
-      background-color: $white;
-    }
-    &::before {
-      top: -8px;
-    }
-    &::after {
-      bottom: -8px;
-    }
-  }
-}
-
 .header {
   position: fixed;
   background-color: $primary;
@@ -38,6 +7,11 @@
   transform: translateY(-540px);
   @include transitionEase;
   z-index: 100;
+  @media (min-width: 768px) {
+    background-color: transparent;
+    transform: translateY(-30px);
+    padding: 60px 0 0;
+  }
   &.active {
     transform: translateY(0);
     @include transitionEase;
@@ -47,6 +21,9 @@
   &__logoSP {
     width: 140px;
     margin: 0 auto;
+    @media (min-width: 768px) {
+      display: none;
+    }
     &__link {
       &:hover {
         opacity: 0.7;
@@ -59,7 +36,20 @@
 
   // PC時のロゴ
   &__logoPC {
-
+    display: none;
+    @include transitionEase;
+    @media (min-width: 768px) {
+      display: block;
+      position: fixed;
+      top: 80px;
+      left: 80px;
+      z-index: 5;
+      width: 100px;
+    }
+    &:hover {
+      opacity: 0.7;
+      @include transitionEase;
+    }
   }
 
   // グローバルメニュー
@@ -67,13 +57,113 @@
     width: 100%;
     color: $white;
     margin-top: 30px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+      text-align: center;
+    }
+    &__list {
+      @media (min-width: 980px) {
+        flex-wrap: nowrap;
+      }
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 100px;
+        padding: 10px;
+      }
+    }
+    &__item {
+      @media (min-width: 768px) {
+        padding-right: 38px;
+        :last-child {
+          padding-right: 0;
+        }
+      }
+
+    }
     &__link {
+      font-size: 16px;
       display: block;
       text-align: center;
       padding: 8px 0;
+      @media (min-width: 768px) {
+        color: $white;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
       &:hover {
         background-color: $text-blue;
+        @media (min-width: 768px) {
+          background-color: transparent;
+          opacity: 0.7;
+          text-decoration: underline;
+          color: $white;
+        }
       }
     }
   }
 }
+
+.spmenu {
+    width: 36px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 220;
+
+    @media (min-width: 768px) {
+          display: none;
+    }
+
+    &:before, &::after {
+      content: "";
+      height: 2px;
+      display: block;
+      background-color: $white;
+      position: absolute;
+      left:0;
+      @include transitionEase;
+    }
+    &:before {
+      width: 100%;
+      top: 0;
+    }
+    &::after {
+      width: 80%;
+      bottom: 0;
+    }
+
+    span {
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      @include transitionEase;
+    }
+  }
+  .spmenu.op {
+    overflow: hidden;
+    position: fixed;
+    &:before {
+      -webkit-transform: translateY(10px) rotate(-45deg);
+      transform: translateY(10px) rotate(-45deg);
+    }
+    &::after {
+      width: 100%;
+      -webkit-transform: translateY(-10px) rotate(45deg);
+      transform: translateY(-10px) rotate(45deg);
+    }
+    span {
+      left: 100%;
+    }
+  }

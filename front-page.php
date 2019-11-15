@@ -5,8 +5,8 @@
 		<?php get_template_part( 'inc-front/front', 'SDGs-card-game' ); ?>
 		<?php get_template_part( 'inc-front/front', 'SDGs-entry' ); ?>
 		<?php get_template_part( 'inc-front/front', 'about' ); ?>
-		<?php get_template_part( 'inc-front/front', 'activity' ); ?>
-		<?php get_template_part( 'inc-front/front', 'members' ); ?>
+		<?php // get_template_part( 'inc-front/front', 'activity' ); ?>
+		<?php // get_template_part( 'inc-front/front', 'members' ); ?>
 	</div> <!-- /.front__main--container -->
 </main> <!-- /.front__main -->
 <?php get_footer(); ?>

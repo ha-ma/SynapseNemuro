@@ -1,5 +1,6 @@
-jQuery(document).ready(function($) {
-  $('#drawerBtn').on('click', function(){
+jQuery(document).ready(function ($) {
+  $('.spmenu').click(function () {
+    $(this).toggleClass('op');
     $('#header').toggleClass('active');
   });
 });

@@ -11,14 +11,16 @@
 	</head>
 	<body>
 		<!-- SP ドロワーボタン -->
-		<div id="drawerBtn" class="drawerBtn">
-			<span class="drawerBtn__bar"></span>
-		</div>
+		<div class="spmenu"><span></span></div>
 
 		<header class="header" id="header">
 			<div class="header__logoSP">
 				<a href="<?php bloginfo( 'url' ); ?>" class="header__logoSP__link"><img class="header__logoSP__img" src="<?php echo get_template_directory_uri(); ?>/images/logo_full.png" alt="header__logoSP"/></a>
 			</div> <!-- /.header__logoSP -->
+
+			<div class="header__logoPC">
+				<a href="<?php bloginfo( 'url' ); ?>" class="header__logoPC__link"><img class="header__logoSP__img" src="<?php echo get_template_directory_uri(); ?>/images/logo_full.png" alt="header__logoPC"/></a>
+			</div> <!-- /.header__logoPC -->
 
 			<?php
 			$args = array(
