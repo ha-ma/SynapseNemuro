@@ -1,0 +1,21 @@
+.front__about {
+  width: 100%;
+  padding: 60px 0;
+  background: $accent;
+  color: $white;
+  &--container {
+    width: 90%;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  &__desc {
+    margin-top: 30px;
+    &__secheading {
+      margin-bottom: 10px;
+    }
+    &__secbody {
+      margin-bottom: 40px;
+    }
+  }
+}
